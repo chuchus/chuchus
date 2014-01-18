@@ -1,0 +1,62 @@
+<html lang="en">
+	<head>
+		<title>DemoSite</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+		<script type="text/javascript"src="js/jquery-2.0.3.min.js"></script>
+		<script type="text/javascript"src="js/raphael-min.js"></script>
+		<script type="text/javascript"src="js/jquery.lazylinepainter-1.4.1.min.js"></script>
+		<script>
+		/* 
+ * Lazy Line Painter - Path Object 
+ * Generated using 'SVG to Lazy Line Converter'
+ * 
+ * http://lazylinepainter.info 
+ * Copyright 2013, Cam O'Connell  
+ *  
+ */ 
+ 
+var pathObj = {
+    "iconmonstr-paper-plane-2-icon": {
+        "strokepath": [
+            {
+                "path": "M 50,267.33 L 221.75,309.35 355.527,178 206.031,274.254 136.857,257.484 414.874,118.464   339.694,387.961 259.894,313.768 216.03,366.826 216.03,336.898 185.333,329.85 185.333,450.684 262.758,357.443 355.37,443.549   462,61.316 z",
+                "duration": 2600
+            }
+        ],
+        "dimensions": {
+            "width": 512,
+            "height": 512
+        }
+    }
+}; 
+ 
+ 
+/* 
+ Setup and Paint your lazyline! 
+ */ 
+ 
+ $(document).ready(function(){ 
+ $('#iconmonstr-paper-plane-2-icon').lazylinepainter( 
+ {
+    "svgData": pathObj,
+    "strokeWidth": 10,
+    "strokeColor": "#e09b99"
+}).lazylinepainter('paint'); 
+ });
+		</script>
+			</head>
+	<body>
+		<div class="wrapper">
+			<h1>first name last name</h1>
+			<h2>catch phrase</h2>
+			<ul>
+				<li><a href="#">twitter</a></li>
+				<li><a href="#">github</a></li>
+				<li><a href="#">facebook</a></li>
+				<li><a href="#">dribbble</a></li>
+			</ul>
+		</div>
+		<div id="iconmonstr-paper-plane-2-icon"></div>
+	</body>
+</html>
